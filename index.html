@@ -1,0 +1,27 @@
+<html ng-app='app'>
+    <body>
+        
+<header ng-controller="ctrl">
+    
+    <h1>Where would you like to go?</h1>
+    <a ui-sref='page1({page: info[0].page})'>Mountains</a>
+    <a ui-sref='page2({page: info[1].page})'>Beach</a>
+</header>
+
+    <ui-view></ui-view>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script> 
+    <script src="app.js"></script>    
+    <script src="control.js"></script>    
+    <script src="service.js"></script>   
+    <script src="page1Ctrl.js"></script>   
+    <script src="page2Ctrl.js"></script>   
+    
+    </body>
+</html>
